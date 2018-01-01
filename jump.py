@@ -62,10 +62,10 @@ if __name__ == '__main__':
         while(1):
             cv2.imshow(IMG_TITLE, image)
             #press SPACE get the next picture
-            if cv2.waitKey(20)&0xFF==32:
+            if cv2.waitKey(0)&0xFF==32:
                 break
             #press ESC exit the loop
-            if cv2.waitKey(20)&0xFF==27:
+            if cv2.waitKey(0)&0xFF==27:
                 cv2.destroyAllWindows()
                 print 'Good game!'
                 exit(0)
